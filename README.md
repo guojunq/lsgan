@@ -38,7 +38,9 @@ Please note that this project is still being updated.  More results and algorith
 	Now you should have bedroom_train_lmdb_hashes_chartensor.t7 in lsun/train
 	
    5. Now return to the parent direcotry of lsun, and you should be ready to run lsgan.lua:
-   	th lsgan.lua
+   	```
+	DATA_ROOT=lsun th lsgan.lua
+	```
 	
 ### How to display the generated images
   
