@@ -8,7 +8,7 @@ Please cite the following paper when referring to the following algorithms (LS-G
 
 **Guo-Jn Qi. Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities. arXiv:1701.06264 [[pdf](https://arxiv.org/abs/1701.06264)]**
   
-Please note that this project is still being updated.  More results and algorithms will be released soon.
+We are keeping updating this repository of source codes, and more results and algorithms will be released soon.
 
 ### For LS-GAN (without conditions)
 
