@@ -1,6 +1,6 @@
 ## Loss-Sensitive GAN
 
-Author: Guo-Jun Qi, Date: 1/9/2017
+Author: Guo-Jun Qi, Date: 1/9/2017, most recent update: 2/8/2017
 
 Questions about the source codes can be directed to Dr. Guo-Jun Qi at guojunq@gmail.com.  All copyrights reserved.
 
@@ -23,7 +23,6 @@ Please note that this project is still being updated.  More results and algorith
    	```
 	luarocks install lmdb.torch
 	luarocks install tds
-	
 	```
 	
   3. Once downloading bedroom_train_lmdb, unzip the dataset and put it in a directory `lsun/train`
@@ -33,7 +32,6 @@ Please note that this project is still being updated.  More results and algorith
 	```
 	cd lsun/train
 	DATA_ROOT=. th lsun_index_generator.lua
-	
 	```
 	Now you should have bedroom_train_lmdb_hashes_chartensor.t7 in lsun/train
 	
@@ -65,7 +63,6 @@ To display images during training and generation, we will use the [display packa
 
 	```
 	dataset=mnist th clsgan.lua
-	
 	```
 
    For the other parameters you can set, please refer to the script in clsgan.lua.
