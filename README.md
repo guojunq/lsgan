@@ -6,7 +6,7 @@ Questions about the source codes can be directed to Dr. Guo-Jun Qi at guojunq@gm
 
 Please cite the following paper when referring to the following algorithms (LS-GAN and CLS-GAN)
 
-Guo-Jn Qi. Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities. arXiv:1701.06264 [[pdf](https://arxiv.org/abs/1701.06264)]
+** Guo-Jn Qi. Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities. arXiv:1701.06264 [[pdf](https://arxiv.org/abs/1701.06264)] **
   
 Please note that this project is still being updated.  More results and algorithms will be released soon.
 
