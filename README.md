@@ -1,4 +1,4 @@
-### Loss-Sensitive GAN
+## Loss-Sensitive GAN
 
 Author: Guo-Jun Qi, Date: 1/9/2017
 
