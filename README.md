@@ -9,20 +9,24 @@ Author: Guo-Jun Qi, Date: 1/9/2017
 Please note that this project is still being updated.  More results and algorithms will be released in future.
 
 For LS-GAN (without conditions)
-1. Please download bedroom_train_lmdb from http://lsun.cs.princeton.edu 
-
+1. Please download bedroom_train_lmdb from http://lsun.cs.princeton.edu
 2. Prepare the dataset following the instructions below
+
    2.1. Install LMDB in your system
    	sudo apt-get install liblmdb-dev
+	
    2.2. Install torch packages
    	luarocks install lmdb.torch
 	luarocks install tds
+	
    2.3. Once downloading bedroom_train_lmdb, unzip the dataset and put it in a directory `lsun/train`
+   
    2.4. Create an index file 
 	Copy lsun_index_generator.lua to lsun/train, and run
 	`cd lsun/train
 	DATA_ROOT=. th lsun_index_generator.lua`
 	Now you should have bedroom_train_lmdb_hashes_chartensor.t7 in lsun/train
+	
    2.5. Now return to the parent direcotry of lsun, and you should be ready to run lsgan.lua
    	th lsgan.lua
 	
