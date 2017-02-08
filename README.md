@@ -6,7 +6,7 @@ Questions about the source codes can be directed to Dr. Guo-Jun Qi at guojunq@gm
 
 Please cite the following paper when referring to the following algorithms (LS-GAN and CLS-GAN)
 
-Guo-Jn Qi. Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities. arXiv:1701.06264 
+Guo-Jn Qi. Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities. arXiv:1701.06264 [[pdf](https://arxiv.org/abs/1701.06264)]
   
 Please note that this project is still being updated.  More results and algorithms will be released soon.
 
@@ -72,9 +72,7 @@ To display images during training and generation, we will use the [display packa
 
 ### Acknowledge: 
 
-1. parts of codes are reused from DCGAN at 
-
-https://github.com/Newmu/dcgan_code
+1. parts of codes are reused from DCGAN at https://github.com/Newmu/dcgan_code
 
 2. the code downloading cifar10 is available at https://github.com/soumith/cifar.torch
 
