@@ -1,14 +1,16 @@
-- Author: Guo-Jun Qi, Date: 1/9/2017
+### Loss-Sensitive GAN
 
-- Questions about the source codes can be directed to Dr. Guo-Jun Qi at guojunq@gmail.com.  All copyrights reserved.
+Author: Guo-Jun Qi, Date: 1/9/2017
 
-- Please cite the following paper when referring to the following algorithms (LS-GAN and CLS-GAN)
+Questions about the source codes can be directed to Dr. Guo-Jun Qi at guojunq@gmail.com.  All copyrights reserved.
+
+Please cite the following paper when referring to the following algorithms (LS-GAN and CLS-GAN)
 
 Guo-Jn Qi. Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities. arXiv:1701.06264 
+  
+Please note that this project is still being updated.  More results and algorithms will be released soon.
 
-- Please note that this project is still being updated.  More results and algorithms will be released soon.
-
-For LS-GAN (without conditions)
+### For LS-GAN (without conditions)
 
 1. Please download bedroom_train_lmdb from http://lsun.cs.princeton.edu
 
@@ -38,14 +40,15 @@ For LS-GAN (without conditions)
    5. Now return to the parent direcotry of lsun, and you should be ready to run lsgan.lua:
    	th lsgan.lua
 	
-How to display the generated images
+### How to display the generated images
+  
 To display images during training and generation, we will use the [display package](https://github.com/szym/display).
 
 - Install it with: `luarocks install https://raw.githubusercontent.com/szym/display/master/display-scm-0.rockspec`
 - Then start the server with: `th -ldisplay.start`
 - Open this URL in your browser: [http://localhost:8000](http://localhost:8000)
 
-For Conditional LS-GAN (CLS-GAN)
+### For Conditional LS-GAN (CLS-GAN)
 
 1. Download and prepare datasets
 
@@ -67,7 +70,7 @@ For Conditional LS-GAN (CLS-GAN)
 
 
 
-Acknowledge: 
+### Acknowledge: 
 
 1. parts of codes are reused from DCGAN at 
 
