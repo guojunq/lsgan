@@ -6,10 +6,12 @@ Guo-Jn Qi. Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities
 
 
 Author: Guo-Jun Qi, Date: 1/9/2017
-Please note that this project is still being updated.  More results and algorithms will be released in future.
+Please note that this project is still being updated.  More results and algorithms will be released soon.
 
 For LS-GAN (without conditions)
+
 1. Please download bedroom_train_lmdb from http://lsun.cs.princeton.edu
+
 2. Prepare the dataset following the instructions below
 
    2.1. Install LMDB in your system
