@@ -12,24 +12,30 @@ For LS-GAN (without conditions)
 
 1. Please download bedroom_train_lmdb from http://lsun.cs.princeton.edu
 
-2. Prepare the dataset following the instructions below
+2. Prepare the dataset following the instructions below 
 
-   2.1. Install LMDB in your system
-   	sudo apt-get install liblmdb-dev
+  1. Install LMDB in your system: 
+   	`sudo apt-get install liblmdb-dev`
 	
-   2.2. Install torch packages
-   	luarocks install lmdb.torch
+  2. Install torch packages:
+   	```
+	luarocks install lmdb.torch
 	luarocks install tds
 	
-   2.3. Once downloading bedroom_train_lmdb, unzip the dataset and put it in a directory `lsun/train`
+	```
+	
+  3. Once downloading bedroom_train_lmdb, unzip the dataset and put it in a directory `lsun/train`
    
-   2.4. Create an index file 
+  4. Create an index file :
 	Copy lsun_index_generator.lua to lsun/train, and run
-	`cd lsun/train
-	DATA_ROOT=. th lsun_index_generator.lua`
+	```
+	cd lsun/train
+	DATA_ROOT=. th lsun_index_generator.lua
+	
+	```
 	Now you should have bedroom_train_lmdb_hashes_chartensor.t7 in lsun/train
 	
-   2.5. Now return to the parent direcotry of lsun, and you should be ready to run lsgan.lua
+   5. Now return to the parent direcotry of lsun, and you should be ready to run lsgan.lua:
    	th lsgan.lua
 	
 How to display the generated images
@@ -40,18 +46,22 @@ To display images during training and generation, we will use the [display packa
 - Open this URL in your browser: [http://localhost:8000](http://localhost:8000)
 
 For Conditional LS-GAN (CLS-GAN)
+
 1. Download and prepare datasets
 
-   1.1. MNIST
-         run "torch-rocks install https://raw.github.com/andresy/mnist/master/rocks/mnist-scm-1.rockspec"
-   1.2. CIFAR10
-	 run "th ./data/Cifar10bintoTensor.lua" 
-   1.3. SVHN
-	 run "th ./data/svhn.lua"
+  1.  MNIST:
+         run `torch-rocks install https://raw.github.com/andresy/mnist/master/rocks/mnist-scm-1.rockspec`
+  2. CIFAR10:
+	 run `th ./data/Cifar10bintoTensor.lua`
+  3. SVHN:
+	 run `th ./data/svhn.lua`
 
 2. Now you should be able to run clsgan.lua now. Select the dataset you want to use.  For example you want to run MNIST to generate handwritten digits according to ten digit classes. Then you can run the following command line
 
+	```
 	dataset=mnist th clsgan.lua
+	
+	```
 
    For the other parameters you can set, please refer to the script in clsgan.lua.
 
