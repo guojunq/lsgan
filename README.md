@@ -10,6 +10,7 @@ Please cite the following paper when referring to the following algorithms (LS-G
   
 We are keeping updating this repository of source codes, and more results and algorithms will be released soon.
 
+
 ### LS-GAN (without conditions)
 
 #### For celebA dataset
@@ -29,7 +30,7 @@ DATA_ROOT=celebA th data/crop_celebA.lua
 2.Training the LS-GAN
 
 ```bash
-DATA_ROOT=celebA dataset=folder th glsgan.lua
+DATA_ROOT=celebA dataset=folder th lsgan.lua
 ```
 
 #### For LSUN bedroom dataset 
