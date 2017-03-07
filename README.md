@@ -13,7 +13,7 @@ We are keeping updating this repository of source codes, and more results and al
 ### LS-GAN (without conditions)
 
 #### For celebA dataset
-1. Setup and download dataset 
+1.Setup and download dataset 
 
 ```bash
 `mkdir celebA; cd celebA
@@ -26,7 +26,7 @@ unzip img_align_celeba.zip; cd ..
 DATA_ROOT=celebA th data/crop_celebA.lua
 ```
 
-2. Training the LS-GAN
+2.Training the LS-GAN
 
 ```bash
 DATA_ROOT=celebA dataset=folder th glsgan.lua
