@@ -10,7 +10,29 @@ Please cite the following paper when referring to the following algorithms (LS-G
   
 We are keeping updating this repository of source codes, and more results and algorithms will be released soon.
 
-### For LS-GAN (without conditions)
+### LS-GAN (without conditions)
+
+#### For celebA dataset
+1. Setup and download dataset 
+
+```bash
+`mkdir celebA; cd celebA
+```
+
+Download img_align_celeba.zip from [http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) under the link "Align&Cropped Images".
+
+```bash
+unzip img_align_celeba.zip; cd ..
+DATA_ROOT=celebA th data/crop_celebA.lua
+```
+
+2. Training the LS-GAN
+
+```bash
+DATA_ROOT=celebA dataset=folder th glsgan.lua
+```
+
+#### For LSUN bedroom dataset 
 
 1. Please download bedroom_train_lmdb from http://lsun.cs.princeton.edu
 
