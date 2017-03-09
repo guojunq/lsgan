@@ -10,6 +10,11 @@ Please cite the following paper when referring to the following algorithms (LS-G
   
 We are keeping updating this repository of source codes, and more results and algorithms will be released soon.
 
+- We now have a new project generalizing LS-GAN to a more general form, called **Generalized LS-GAN (GLS-GAN)**. It unifies Wasserstein GAN as well as this LS-GAN in an integrated framework, along with a super class of GLS-GANs including various new GAN members to explore. Check the github project at https://github.com/guojunq/glsgan, and the Appendix D of the newly updated prepint 
+
+- We also prepare **an incomplete map of GANs** at http://www.cs.ucf.edu/~gqi/GANs.htm, which plots the terrority of basic GANs in our view. We will update the map as more GAN territories are found.
+
+
 
 ### LS-GAN (without conditions)
 
