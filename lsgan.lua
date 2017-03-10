@@ -31,7 +31,7 @@ opt = {
    name = 'lsgan_result',
    noise = 'uniform',       -- uniform / normal
    lambda=0.0002,              -- the scale of the distance metric used for adaptive margins. This is actually tau in the original paper. L2: 0.05/L1: 0.001, temporary best 0.008 before applying scaling, 
-   gamma = 0.1,		      -- the coefficient for loss minimization term.  Set to zero for non-conditional LS-GAN as the theorem shows this term can be ignored. But setting it to a small value allows a more stable result.
+   gamma = 0.,		      -- the coefficient for loss minimization term.  Set to zero for non-conditional LS-GAN as the theorem shows this term can be ignored. But setting it to a small value allows a more stable result.
    decay_rate = 0.00,  -- weight decay: 0.00005 
 }
 
