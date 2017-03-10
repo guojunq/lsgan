@@ -1,4 +1,4 @@
-## Loss-Sensitive GAN
+# Loss-Sensitive GAN
 
 Author: Guo-Jun Qi, Date: 1/9/2017, most recent update: 2/8/2017
 
@@ -19,9 +19,9 @@ We are keeping updating this repository of source codes, and more results and al
 - **lambda:** the scale of margin. This controls the desired margins between real and fake samples.  However, we found this is a hyperparameter not very sensitive to the generation performance.
 
 
-### LS-GAN (without conditions)
+## LS-GAN (without conditions)
 
-#### For celebA dataset
+### For celebA dataset
 1.Setup and download dataset 
 
 ```bash
@@ -41,7 +41,7 @@ DATA_ROOT=celebA th data/crop_celebA.lua
 DATA_ROOT=celebA dataset=folder th lsgan.lua
 ```
 
-#### For LSUN bedroom dataset 
+### For LSUN bedroom dataset 
 
 1. Please download bedroom_train_lmdb from http://lsun.cs.princeton.edu
 
@@ -79,7 +79,7 @@ To display images during training and generation, we will use the [display packa
 - Then start the server with: `th -ldisplay.start`
 - Open this URL in your browser: [http://localhost:8000](http://localhost:8000)
 
-### For Conditional LS-GAN (CLS-GAN)
+## For Conditional LS-GAN (CLS-GAN)
 
 1. Download and prepare datasets
 
@@ -100,7 +100,7 @@ To display images during training and generation, we will use the [display packa
 
 
 
-### Acknowledge: 
+## Acknowledge: 
 
 1. parts of codes are reused from DCGAN at https://github.com/Newmu/dcgan_code
 
