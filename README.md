@@ -12,10 +12,10 @@ We are keeping updating this repository of source codes, and more results and al
 
 - We now have a new project generalizing LS-GAN to a more general form, called **Generalized LS-GAN (GLS-GAN)**. It unifies Wasserstein GAN as well as this LS-GAN in an integrated framework, along with a super class of GLS-GANs including various new GAN members to explore. Check the github project at https://github.com/guojunq/glsgan, and the Appendix D of the newly updated prepint 
 
-- We also prepare **an incomplete map of GANs** at http://www.cs.ucf.edu/~gqi/GANs.htm, which plots the terrority of basic GANs in our view. We will update the map as more GAN territories are found.
+- We also show **an incomplete map of GANs** at http://www.cs.ucf.edu/~gqi/GANs.htm, which plots the terrority of basic GANs in our view. We will update the map as more GAN territories are found.
 
 ## Notes on setting the hyperparameters
-- **gamma:** this is the coefficient for loss-minimization term (the first term in the objective for optimizing L_\theta). Although in theory, this term can be discarded without affecting the consistency of densities between real and generated samples, we found setting a small value to gamma would  make the generated images more smooth and visually plausible.  This is perphas because allowing a small deviation from the true data density could avoid the areas with abrustly changing densities, thus focusing on more global manifold structure of real images. 
+- **gamma:** this is the coefficient for loss-minimization term (the first term in the objective for optimizing L_\theta). 
 - **lambda:** the scale of margin. This controls the desired margins between real and fake samples.  However, we found this is a hyperparameter not very sensitive to the generation performance.
 
 
